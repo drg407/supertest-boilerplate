@@ -14,7 +14,7 @@ npm install
 
 An example dotenv file is included and should be renamed to `.env` and include valid credentials before running tests.
 
-### `/example/apps-service/od360_test.js`
+### `/example/example_test.js`
 
 ```javascript
 require('dotenv').config();
