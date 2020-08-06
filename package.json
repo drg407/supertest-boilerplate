@@ -1,0 +1,23 @@
+{
+  "name": "supertest-boilerplate",
+  "version": "1.0.0",
+  "description": "A javascript api testing boilerplate with mocha and chai assertions",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test:example": "mocha --recursive example/*.js --reporter mochawesome --code"
+  },
+  "author": "David Guevara <drg407@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "mocha": "^8.1.1",
+    "mochawesome": "^6.1.1",
+    "mochawesome-report-generator": "^5.1.0",
+    "supertest": "^4.0.2"
+  }
+}
