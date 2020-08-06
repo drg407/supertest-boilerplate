@@ -219,4 +219,16 @@ describe('REST api tests', () => {
         expect(response.status).to.equal(400);
 
     });
+
+    it('GET should DELAYED RESPONSE', async () => {
+
+        const response = await request(baseUrl)
+            .get(resource.api + '/users?delay=3')
+
+            .then(response => {
+                return response;
+            })
+        console.log(response.body);
+        expect(response.status).to.equal(200);
+    }).timeout(5000);
 });
